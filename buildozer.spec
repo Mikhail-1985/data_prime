@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,requests==2.25.1
+requirements = python3,kivy==2.0.0,requests==2.25.1,Pillow==8.2.0,Pygments==2.9.0
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -69,6 +69,16 @@ osx.kivy_version = 2.0.0
 
 # requests version to use
 osx.requests==2.25.1
+
+# requests version to use
+osx.requests==2.25.1
+
+# Pillow version to use
+osx.Pillow==8.2.0
+
+# Pygments version to use
+osx.Pygments==2.9.0
+
 
 #
 # Android specific
@@ -292,20 +302,20 @@ ios.kivy_ios_branch = master
 
 # Another platform dependency: ios-deploy
 # Uncomment to use a custom checkout
-#ios.ios_deploy_dir = ../ios_deploy
+# ios.ios_deploy_dir = ../ios_deploy
 # Or specify URL and branch
-ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
-ios.ios_deploy_branch = 1.10.0
+# ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
+# ios.ios_deploy_branch = 1.10.0
 
 # (bool) Whether or not to sign the code
-ios.codesign.allowed = false
+# ios.codesign.allowed = false
 
 # (str) Name of the certificate to use for signing the debug version
 # Get a list of available identities: buildozer ios list_identities
-#ios.codesign.debug = "iPhone Developer: <lastname> <firstname> (<hexstring>)"
+# ios.codesign.debug = "iPhone Developer: <lastname> <firstname> (<hexstring>)"
 
 # (str) Name of the certificate to use for signing the release version
-#ios.codesign.release = %(ios.codesign.debug)s
+# ios.codesign.release = %(ios.codesign.debug)s
 
 
 [buildozer]
