@@ -28,7 +28,7 @@ source.dir = .
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.1
+version = 0.2
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -62,7 +62,7 @@ orientation = all
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.9.1
 
 # Kivy version to use
 osx.kivy_version = 2.0.0
@@ -302,20 +302,20 @@ ios.kivy_ios_branch = master
 
 # Another platform dependency: ios-deploy
 # Uncomment to use a custom checkout
-# ios.ios_deploy_dir = ../ios_deploy
+#ios.ios_deploy_dir = ../ios_deploy
 # Or specify URL and branch
-# ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
-# ios.ios_deploy_branch = 1.10.0
+ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
+ios.ios_deploy_branch = 1.10.0
 
 # (bool) Whether or not to sign the code
-# ios.codesign.allowed = false
+ios.codesign.allowed = false
 
 # (str) Name of the certificate to use for signing the debug version
 # Get a list of available identities: buildozer ios list_identities
-# ios.codesign.debug = "iPhone Developer: <lastname> <firstname> (<hexstring>)"
+#ios.codesign.debug = "iPhone Developer: <lastname> <firstname> (<hexstring>)"
 
 # (str) Name of the certificate to use for signing the release version
-# ios.codesign.release = %(ios.codesign.debug)s
+#ios.codesign.release = %(ios.codesign.debug)s
 
 
 [buildozer]
