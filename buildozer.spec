@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,altgraph==0.17,certifi==2021.5.30,chardet==4.0.0,docutils==0.17.1,future==0.18.2,idna==2.10,pefile==2021.5.2,Pillow==8.2.0,Pygments==2.9.,pyinstaller==4.3,pyinstaller-hooks-contrib==2021.1,pypiwin32==223,pywin32==30,pywin32-ctypes==0.2.0,requests==2.25.1,soupsieve==2.2.1,urllib3==1.26.5
+requirements = python3,kivy==2.0.0,requests==2.25.1
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -66,6 +66,9 @@ osx.python_version = 3
 
 # Kivy version to use
 osx.kivy_version = 2.0.0
+
+# requests version to use
+osx.requests==2.25.1
 
 #
 # Android specific
