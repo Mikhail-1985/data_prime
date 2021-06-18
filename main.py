@@ -1,7 +1,7 @@
 import requests
 import json
 
-from secret_key import KEY
+# from secret_key import KEY
 
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
@@ -11,9 +11,9 @@ from kivy.config import Config
 from kivy.uix.popup import Popup
 
 
-Config.set('graphics', 'resizable', '0')
-Config.set('graphics', 'width', '640')
-Config.set('graphics', 'heigth', '480')
+# Config.set('graphics', 'resizable', '0')
+# Config.set('graphics', 'width', '640')
+# Config.set('graphics', 'heigth', '480')
 
 data = requests.get('https://api.themoviedb.org/3/movie/popular?api_key=c8440f32ddf59f805d44f9aa799f282b&language=en-US&page=1')
 movie = data.text
