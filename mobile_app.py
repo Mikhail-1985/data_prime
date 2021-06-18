@@ -7,11 +7,9 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.config import Config
-# from kivy.uix.modalview import ModalView
-from kivy.uix.label import Label
+
 from kivy.uix.popup import Popup
-from kivy.uix.relativelayout import RelativeLayout
-# from kivy.uix.floatlayout import FloatLayout
+
 
 Config.set('graphics', 'resizable', '0')
 Config.set('graphics', 'width', '640')
@@ -49,7 +47,6 @@ class MobileApp(App):
 
 
     def btn_press(self, instance):
-        # print(instance.text, instance)
         key = 0
         for i in range(len(movie_list['results'])):
             if movie_list_result[i] == instance.text:
@@ -64,10 +61,9 @@ class MobileApp(App):
             font_size = 16,
             halign ='left',
             valign = 'middle',
-            # shorten = True,
+            
             split_str = '.',
             size_hint=(1, 1),
-            # text_align = 'center',
             text_size = (500, 700)
         )
         popup = Popup(title=instance.text, content=content, auto_dismiss=False)
