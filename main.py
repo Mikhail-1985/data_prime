@@ -39,8 +39,12 @@ class MobileApp(App):
     bl = BoxLayout(orientation='vertical', padding=[20, 40])
     def build(self):
         bl = self.bl
-        for i in range(len(movie_list['results'])):
-            bl.add_widget(Button(text=movie_list_result[i], on_press=self.btn_press))
+        if movie_list:
+            for i in range(len(movie_list['results'])):
+                bl.add_widget(Button(text=movie_list_result[i], on_press=self.btn_press))
+        else:
+            for i in range(20):
+                bl.add_widget(Button(text='данные не получены', on_press=self.btn_press))
         return bl
 
 
